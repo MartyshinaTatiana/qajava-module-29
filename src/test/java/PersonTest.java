@@ -29,6 +29,14 @@ public class PersonTest {
             System.out.println("After Class");
             currentTime();
         }
+        @BeforeMethod
+        public void setUp(){
+            System.out.println("TeenageTest started");
+        }
+        @AfterMethod
+        public void tearDown(){
+            System.out.println("TeenageTest done");
+        }
 
         @DataProvider(name = "ageDataProvider")
         Object[][] ageDataProvider() {
